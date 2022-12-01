@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="refresh" content="30">
+	<title>Sign Up Page</title>
+    <link rel="stylesheet" type="text/css" href="Advanced.css">
+    <script defer src="Advanced.js"></script>
+</head>
+<body>
+<div class="main">
+	<form name="myForm" id="form" action="/" method="post" onsubmit="return validateForm()">
+		<h1 style="text-align: center;"> Registration </h1>
+		<div class="input-ctl">
+			<label for="name"><b>Name:</b></label>
+			<input type="text" name="name" id="name" placeholder="Enter your name...">
+			<div class="error"></div>
+		</div>
+		<div class="input-ctl">
+			<label for="email"><b>Email:</b></label>
+			<input type="email" name="email" id="email" placeholder="Enter your email..." required>
+			<div class="error"></div>
+		</div>
+		<div class="input-ctl">
+			<label for="pwd"><b>Password:</b></label>
+			<input type="Password" name="pwd" id="pwd" placeholder="Enter your Password...">
+			<div class="error"></div>
+		</div>
+		<div class="input-ctl">
+			<label for="pwd2"><b>Confirm Password:</b></label>
+			<input type="Password" name="pwd2" id="pwd2" placeholder="Confirm your Password...">
+			<div class="error"></div>
+		</div>
+		<br>
+		<div class="sub">
+		<input type="submit" value="Sign Up">
+		<input type="reset" value="Cancel">
+		<input type="checkbox" name="remember me" checked><b>Remember me</b>
+		<p>By signing in you agree to our <a style="color: dodgerblue;" href="#">Terms & Conditions </a></p>
+		<span style="float: right;">Already have an account?<a href="AnotherSignIn.html">Login</a></span>
+	</div>
+	</form>
+</div>
+</body>
+</html>
